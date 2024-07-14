@@ -1,0 +1,148 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&display=swap');
+
+@font-face {
+    font-family: 'Sharp Sans';
+    src: url('../fonts/sharp-sans-webfont/Sharp\ Sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sharp Sans Medium';
+    src: url('../fonts/sharp-sans-webfont/Sharp\ Sans\ Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sharp Sans Bold';
+    src: url('../fonts/sharp-sans-webfont/SharpSansBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+/* Cores */
+:root {
+    --light50: #FEFFFF;
+    --primary-500: #3F006F;
+}
+
+/* Reset CSS */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Sharp Sans', sans-serif;
+}
+
+/* Header */
+.menu-item {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--primary-500);
+    font-family: 'Sharp Sans Bold', sans-serif;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.menu-item.active {
+    background-image: url(../img/bg-menu-item.svg);
+    background-size: contain;
+    color: var(--light50);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light50);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    padding: 0 80px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 624px;
+    width: 52%;
+}
+
+.hero {
+    width: 100%;
+    height: 661px;
+    background-image: url(../img/bg-home.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.content-hero {
+    width: 138px;
+    display: flex;
+}
+
+.content-hero {
+    width: 326px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 8%;
+}
+
+.title-hero h1 {
+    font-family: "Bahiana", sans-serif;
+    font-style: normal;
+    color: var(--primary-500);
+    font-size: 90px;
+    text-align: center;
+    margin: 0;
+    line-height: 100%;
+}
+
+h1.title-bigger {
+    font-size: 120px;
+}
+
+h3.desc {
+    font-family: 'Sharp Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--primary-500);
+}
+
+strong {
+    font-weight: bold;
+}
+
+.content-one h2 {
+    font-family: 'Bahiana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    color: var(--primary-500);
+}
+
+.minha-trajetoria {
+    padding: 0 80px;
+}
