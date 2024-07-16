@@ -47,6 +47,11 @@ body{
     font-family: 'Sharp Sans', sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Header */
 .menu-item {
     font-style: normal;
@@ -135,6 +140,14 @@ strong {
     font-weight: bold;
 }
 
+.content-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+}
+
 .content-one h2 {
     font-family: 'Bahiana';
     font-style: normal;
@@ -145,4 +158,53 @@ strong {
 
 .minha-trajetoria {
     padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background: var(--primary-500);
+    border-radius: 10px;
+    display: flex;
+    width: 295px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sharp Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--light50);
+}
+
+.content-two {
+    width: 40%;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.cards {
+    padding: 60px 40px;
+}
+
+.leia-manifesto {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.leia-manifesto h3 {
+    font-family: 'Sharp Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    color: var(--primary-500);
 }
