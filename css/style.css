@@ -283,6 +283,10 @@ footer {
     cursor: pointer;
 }
 
+.mobile-only {
+    display: none;
+}
+
 @media (max-width: 992px) {
     header nav {
         display: none;
@@ -321,5 +325,90 @@ footer {
         padding: 0;
         height: 60px;
         color: var(--light50);
+        text-align: right;
+    }
+    .hero { 
+        background-size: cover;
+        align-items: flex-start;
+        height: 600px;
+        background-image: url(../img/bg-mobile.png); 
+    }
+    section.minha-trajetoria {
+        padding: 0 20px;
+        flex-direction: column-reverse;
+    }
+    .content-one {
+        width: 100%;
+    }
+    h2.desk-only {
+        display: none;
+    }
+    h2.mobile-only {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 400px;
+        padding: 30px 20px;   
+    }
+    .content-hero {
+        width: 100%;
+        margin-right: 0;
+    }
+    .title-hero h1 {
+        font-size: 45px;
+        font-weight: normal;
+    }
+    .title-bigger {
+        font-size: 60px;
+        font-weight: normal;
+    }
+    h3.desc  {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .content-one h2 {
+        font-size: 35px;
+    }
+    section.minha-trajetoria {
+        padding-top: 10px;
+    }
+    .desk-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .minha-trajetoria h2 {
+        font-family: 'Bahiana';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--primary-500);
+    }
+    .content-two {
+        width: 100%;
+        text-align: center;
+    }
+    .content-two img {
+        max-width: 246px;
+        margin-bottom: 30px;
+    }
+    .btn {
+        width: 150px;
+        height: 54px;
+        font-size: 16px;
+    }
+    .cards-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .cards-container img {
+        max-width: 256px;
     }
 }
