@@ -193,6 +193,7 @@ section.cards {
 
 .leia-manifesto {
     padding: 20px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,19 +212,21 @@ section.cards {
 
 footer {
     background-image: url(../img/bg-footer.svg);
-    min-height: 290px;
+    min-height: 283px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 3%;
     background-size: cover;
+    margin-top: -46px;
 }
 
 .content-footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 11%;
+    gap: 10%;
+    margin-top: 20px;
 }
 
 .menu-footer {
@@ -254,4 +257,19 @@ footer {
 
 .menu-footer.redes {
     align-self: flex-start;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+}
+
+.img-pre-footer {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../img/vector-footer.svg);
+    width: 103%;
+    height: 153px;
+    background-position: right;
+    background-repeat: no-repeat;
 }
