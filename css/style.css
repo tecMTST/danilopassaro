@@ -80,6 +80,8 @@ header {
     background-color: var(--light50);
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
     padding: 0 3%;
+    position: sticky;
+    top: 0;
 }
 
 header nav {
@@ -148,7 +150,8 @@ strong {
     width: 60%;
 }
 
-.content-one h2 {
+.content-one h2,
+.minha-trajetoria h2 {
     font-family: 'Bahiana';
     font-style: normal;
     font-weight: 400;
@@ -325,17 +328,22 @@ footer {
         padding: 0;
         height: 60px;
         color: var(--light50);
-        text-align: right;
+        text-align: center;
     }
-    .hero { 
+    .hero {
         background-size: cover;
         align-items: flex-start;
-        height: 600px;
-        background-image: url(../img/bg-mobile.png); 
+        height: 820px;
+        background-image: url(../img/bg-hero-tablet.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #FFD800;
     }
     section.minha-trajetoria {
         padding: 0 20px;
         flex-direction: column-reverse;
+        gap: 30px;
     }
     .content-one {
         width: 100%;
@@ -345,6 +353,37 @@ footer {
     }
     h2.mobile-only {
         display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .content-hero {
+        width: 100%;
+        margin-top: 40px;
+        margin-right: 0;
+    }
+    .content-two {
+        width: 100%;
+        text-align: center;
+    }
+    .content-two img {
+        max-width: 360px;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .content-footer {
+        flex-direction: column;
+        gap: 40px;
+        margin: 80px 0 40px;
+    }
+    .menu-footer {
+        text-align: center;
+    }
+    .menu-footer.redes {
+        align-self: center;
     }
 }
 
@@ -356,10 +395,12 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         background-color: #FFD800;
+        background-image: url(../img/bg-mobile.png);
     }
     .content-hero {
         width: 100%;
         margin-right: 0;
+        margin-top: 0;
     }
     .title-hero h1 {
         font-size: 45px;
@@ -378,6 +419,7 @@ footer {
     }
     section.minha-trajetoria {
         padding-top: 10px;
+        gap: 0;
     }
     .desk-only {
         display: none;
@@ -452,5 +494,11 @@ footer {
     }
     .menu-footer.redes {
         align-self: center;
+    }
+    h2.mobile-only {
+        margin-top: 0;
+    }
+    .content-footer {
+        margin: 20px 0;
     }
 }
