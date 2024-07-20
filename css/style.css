@@ -177,6 +177,10 @@ strong {
     color: var(--light50);
 }
 
+.btn:hover {
+    filter: brightness(1.2);
+}
+
 .content-two {
     width: 40%;
 }
