@@ -277,3 +277,49 @@ footer {
     background-position: right;
     background-repeat: no-repeat;
 }
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    header nav {
+        display: none;
+        flex-direction: column;
+        background-color: var(--light50);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        background-color: var(--primary-500);
+    }
+    .hamburger-menu {
+        width: 68px;
+        background-image: url(../img/bg-menu-item.svg);
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-item.active {
+        background-image: none;
+    }
+    .logo img {
+        max-width: 170px;
+    }
+    header {
+        padding: 0 0 0 20px;
+        height: 60px;
+    }
+    .menu-item.active {
+        color: var(--light50);
+    }
+    .menu-item {
+        padding: 0;
+        height: 60px;
+        color: var(--light50);
+    }
+}
