@@ -79,7 +79,7 @@ header {
     align-items: center;
     background-color: var(--light50);
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-    padding: 0 80px;
+    padding: 0 3%;
 }
 
 header nav {
@@ -157,7 +157,7 @@ strong {
 }
 
 .minha-trajetoria {
-    padding: 0 80px;
+    padding: 0 3%;
     display: flex;
     justify-content: space-between;
 }
@@ -188,7 +188,7 @@ strong {
 }
 
 section.cards {
-    padding: 60px 40px;
+    padding: 60px 3%;
 }
 
 .leia-manifesto {
@@ -207,4 +207,51 @@ section.cards {
     line-height: 53px;
     text-align: center;
     color: var(--primary-500);
+}
+
+footer {
+    background-image: url(../img/bg-footer.svg);
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3%;
+    background-size: cover;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 11%;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-footer h4 {
+    font-family: 'Sharp Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--light50);
+}
+
+.footer-item-menu {
+    font-family: 'Sharp Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--light50);
+}
+
+.footer-item-menu:hover {
+    text-decoration: underline;
+}
+
+.menu-footer.redes {
+    align-self: flex-start;
 }
