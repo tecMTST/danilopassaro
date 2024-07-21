@@ -304,6 +304,135 @@ footer {
     background-size: cover;
 }
 
+section.quem-passaro {
+    padding: 10px 3%;
+}
+
+.passaro section h2 {
+    font-family: 'Bahiana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    color: var(--primary-500);
+}
+
+.content-passaro {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-passaro p {
+    font-family: 'Sharp Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: justify;
+    color: #0C0C0C;
+}
+
+.cards-depoimentos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.depoimento {
+    height: 425px;
+    width: 400px;
+    background-image: url(../img/bg-depoimento-boulos.png);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 40px;
+    background-repeat: no-repeat;
+}
+
+.depoimento.guajajara {
+    height: 684px;
+    background-image: url(../img/bg-dep-guajajara.png);
+    padding: 0 40px;
+    align-items: center;
+}
+
+.depoimento.ediane {
+    height: 438px;
+}
+
+.depoimento p {
+    font-family: 'Sharp Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--light50);
+}
+
+section.depoimentos {
+    padding: 60px 3%;
+}
+
+.legenda {
+    display: flex;
+    background-image: url(../img/fundo-legenda-boulos.svg);
+    background-repeat: no-repeat;
+    width: 400px;
+    margin-top: -44px;
+    background-position: right top;
+}
+
+.legenda.leg-guajajara {
+    background-image: url(../img/bg-legenda-guajajara.png);
+    margin-top: -24px;
+    width: 412px;
+}
+
+.legenda.leg-ediane {
+    background-image: url(../img/bg-legenda-ediane.png);
+    width: 350px;
+    margin-left: 20px;
+}
+
+.legenda.leg-guajajara .content-legenda {
+    width: 412px;
+    padding: 10px 6px;
+}
+
+.legenda.leg-guajajara img {
+    margin-top: -30px;
+    margin-left: -4px;
+}
+
+.legenda.leg-ediane img {
+    margin-top: -30px;
+}
+
+.content-legenda {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.legenda h4 {
+    font-family: 'Sharp Sans Bold';
+    font-size: 24px;
+    color: var(--primary-500);
+}
+
+.legenda p {
+    font-family: 'Sharp Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.depoimento.ediane {
+    height: 438px;
+    padding: 30px 48px;
+}
+
 @media (min-width:1480px) {
     .hero {
         height: 890px;
