@@ -514,6 +514,9 @@ span.destaque  {
     .hero-passaro {
         height: 930px;
     }
+    .hero-defendemos {
+        height: 453px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -619,6 +622,9 @@ span.destaque  {
     .hero-passaro {
         background-size: cover;
         height: 428px;
+    }
+    .hero-defendemos {
+        height: 230px;
     }
 }
 
@@ -803,5 +809,32 @@ span.destaque  {
     .legenda.leg-ediane {
         margin-top: -52px;
         width: 260px;
+    }
+    .hero-defendemos {
+        height: 140px;
+        background-image: url(../img/bg-defendemos.jpg);
+    }
+    h2.header-accordion {
+        font-size: 24px;
+    }
+    .header-accordion img {
+        height: 24px;
+        width: 24px;
+    }
+    .content-passaro {
+        gap: 0;
+    }
+    .content-accordion {
+        gap: 20px;
+        margin-top: 20px;
+    }
+    span.destaque {
+        font-size: 16px;
+    }
+    .quem-passaro.sec-defendemos {
+        padding: 40px 20px;
+    }
+    .o-que-defendemos .leia-manifesto {
+        padding: 0;
     }
 }
