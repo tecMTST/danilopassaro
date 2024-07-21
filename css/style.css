@@ -548,6 +548,15 @@ section.depoimentos {
     .menu-footer.redes {
         align-self: center;
     }
+    .cards-depoimentos {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .hero-passaro {
+        background-size: cover;
+        height: 428px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -663,5 +672,65 @@ section.depoimentos {
     }
     .content-footer {
         margin: 20px 0;
+    }
+    .hero-passaro {
+        background-size: cover;
+        height: 180px;
+    }
+    .passaro section h2 {
+        font-size: 25px;
+    }
+    .content-passaro p {
+        font-size: 12px;
+    }
+    .content-passaro {
+        gap: 20px;
+    }
+    section.quem-passaro {
+        padding: 10px 20px;
+    }
+    section.depoimentos {
+        padding: 60px 20px;
+    }
+    .depoimento {
+        max-width: 100%;
+        height: 351px;
+        background-size: contain;
+        padding: 30px;
+    }
+    .legenda {
+        max-width: 100%;
+        width: 310px;
+        margin-left: 20px;
+    }
+    .depoimento p {
+        font-size: 16px;
+    }
+    .legenda h4 {
+        font-size: 18px;
+    }
+    .legenda p {
+        font-size: 12px;
+    }
+    .card-dep {
+        max-width: 100%;
+    }
+    .legenda img {
+        margin-top: -14px;
+        margin-left: -25px;
+    }
+    .depoimento.guajajara {
+        height: 580px;
+        align-items: flex-start;
+        padding: 30px 40px;
+    }
+    .legenda.leg-guajajara {
+        max-width: 100%;
+        margin-top: -50px;
+        width: 300px;
+    }
+    .legenda.leg-guajajara img {
+        margin-top: -30px;
+        margin-left: -27px;
     }
 }
