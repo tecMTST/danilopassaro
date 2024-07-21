@@ -733,4 +733,12 @@ section.depoimentos {
         margin-top: -30px;
         margin-left: -27px;
     }
+    .depoimento.ediane {
+        height: 365px;
+        padding: 20px;
+    }
+    .legenda.leg-ediane {
+        margin-top: -52px;
+        width: 260px;
+    }
 }
