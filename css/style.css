@@ -42,7 +42,7 @@
 body{
     font-size: 100%;
     list-style-type: none;
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;
     font-family: 'Sharp Sans', sans-serif;
 }
@@ -288,6 +288,23 @@ footer {
 
 .mobile-only {
     display: none;
+}
+
+@media (min-width:1441px) {
+    .hero {
+        height: 890px;
+    }
+    .img-pre-footer {
+        width: 102%;
+    }
+    .cards-container {
+        justify-content: center;
+        gap: 20px;
+    }
+    .content-footer {
+        justify-content: space-evenly;
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 992px) {
