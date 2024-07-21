@@ -290,7 +290,7 @@ footer {
     display: none;
 }
 
-@media (min-width:1441px) {
+@media (min-width:1480px) {
     .hero {
         height: 890px;
     }
