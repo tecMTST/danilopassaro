@@ -763,14 +763,15 @@ span.destaque  {
     }
     .depoimento {
         max-width: 100%;
-        height: 351px;
-        background-size: contain;
+        height: 345px;
+        background-size: cover;
         padding: 30px;
     }
     .legenda {
         max-width: 100%;
         width: 310px;
         margin-left: 20px;
+        margin-top: -28px;
     }
     .depoimento p {
         font-size: 16px;
@@ -789,13 +790,13 @@ span.destaque  {
         margin-left: -25px;
     }
     .depoimento.guajajara {
-        height: 580px;
+        height: 550px;
         align-items: flex-start;
         padding: 30px 40px;
     }
     .legenda.leg-guajajara {
         max-width: 100%;
-        margin-top: -50px;
+        margin-top: -17px;
         width: 300px;
     }
     .legenda.leg-guajajara img {
@@ -803,11 +804,12 @@ span.destaque  {
         margin-left: -27px;
     }
     .depoimento.ediane {
-        height: 365px;
+        height: 342px;
         padding: 20px;
+        background-size: cover;
     }
     .legenda.leg-ediane {
-        margin-top: -52px;
+        margin-top: -30px;
         width: 260px;
     }
     .hero-defendemos {
