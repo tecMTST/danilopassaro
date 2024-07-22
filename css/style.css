@@ -535,7 +535,7 @@ section.quem-passaro.manifesto {
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .col-formulario {
@@ -792,6 +792,11 @@ div#organizacao-politica-group input {
     .hero-defendemos {
         height: 230px;
     }
+    .container-formulario {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1007,5 +1012,42 @@ div#organizacao-politica-group input {
     }
     .o-que-defendemos .leia-manifesto {
         padding: 0;
+    }
+    .hero-manifesto {
+        height: 140px;
+        background-image: url(../img/bg-manifesto-mobile.png);
+    }
+    .col-se-inscreva {
+        width: 100%;
+    }
+    .col-se-inscreva h5 {
+        font-size: 18px;
+    }
+    .passaro section .col-se-inscreva h2 {
+        font-size: 50px;
+        max-width: 230px;
+    }
+    .col-formulario {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .formulario-cadastro {
+        padding: 40px 20px;
+    }
+    label {
+        font-size: 18px;
+    }
+    input {
+        height: 48px;
+        padding: 0 20px;
+    }
+    .form-group button {
+        width: 150px;
+        height: 56px;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+    .manifesto footer {
+        margin-top: -30px;
     }
 }
