@@ -45,3 +45,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"][name="politica"]');
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            checkboxes.forEach(box => {
+                if (box !== this) box.checked = false;
+            });
+            toggleOrganizacaoGroup();
+        });
+    });
+});
