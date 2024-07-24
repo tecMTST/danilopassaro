@@ -823,7 +823,7 @@ div#organizacao-politica-group input {
         font-weight: normal;
     }
     h3.desc  {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
     }
     .content-one h2 {
@@ -921,7 +921,7 @@ div#organizacao-politica-group input {
         font-size: 25px;
     }
     .content-passaro p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .content-passaro {
         gap: 20px;
@@ -952,7 +952,7 @@ div#organizacao-politica-group input {
         font-size: 18px;
     }
     .legenda p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .card-dep {
         max-width: 100%;
