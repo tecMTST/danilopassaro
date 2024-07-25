@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pássaro, filho de nordestinos e cria da Brasilândia, São Paulo, é teólogo, historiador e ativista social. Fundador do Instituto Periferia Sem Fronteiras, luta por justiça social e direitos das periferias. Pré-candidato pelo PSOL, defende a democracia, o socialismo e uma política coletiva e solidária.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Danilo Pássaro - pré-candidato a vereador</title>
 </head>
@@ -33,8 +34,34 @@
         <section class="minha-trajetoria">
             <div class="content-one">
                 <h2 class="desk-only">conheça minha trajetória!</h2>
-                <div class="slide">
-                    <img src="img/lancamento_cards_01.jpg" alt="Card Lançamento">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/lancamento_cards_01.jpg" alt="Card Lançamento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/lancamento_cards_02.jpg" alt="Card Lançamento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/lancamento_cards_03.jpg" alt="Card Lançamento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/lancamento_cards_04.png" alt="Card Lançamento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/lancamento_cards_05.jpg" alt="Card Lançamento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/lancamento_cards_06.png" alt="Card Lançamento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/lancamento_cards_07.jpg" alt="Card Lançamento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/lancamento_cards_08.jpg" alt="Card Lançamento">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <a href="passaro/" class="btn" style="margin-top: 20px;">Saiba mais</a>
             </div>
@@ -46,13 +73,13 @@
         <section class="cards">
             <div class="cards-container">
                 <div class="card">
-                    <a href="#"><img src="img/SP-COM-BRASIL-400x390.jpg" alt="São Paulo precisa estar junto com o Brasil"></a>
+                    <a href="o-que-defendemos/#sp-junto-com-o-brasil"><img src="img/SP-COM-BRASIL-400x390.jpg" alt="São Paulo precisa estar junto com o Brasil"></a>
                 </div>
                 <div class="card">
-                    <a href="#"><img src="img/vamosa-mudar-sp-400x390.jpg" alt="Vamos mudar a nossa cidade"></a>
+                    <a href="o-que-defendemos/#vamos-mudar-a-nossa-cidade"><img src="img/vamosa-mudar-sp-400x390.jpg" alt="Vamos mudar a nossa cidade"></a>
                 </div>
                 <div class="card">
-                    <a href="#"><img src="img/negritude-400x390.jpg" alt="A negritude e as periferias no poder"></a>
+                    <a href="o-que-defendemos/#negritude-no-poder"><img src="img/negritude-400x390.jpg" alt="A negritude e as periferias no poder"></a>
                 </div>
             </div>
         </section>
@@ -86,7 +113,25 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        function initializeSwiper() {
+            if (document.querySelector('.swiper')) {
+                const swiper = new Swiper('.swiper', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        //dynamicBullets: true
+                    },
+                });
+                console.log('Swiper inicializado:', swiper);
+            } else {
+                console.error('Elemento Swiper não encontrado.');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', initializeSwiper);
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>
-

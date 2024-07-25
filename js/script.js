@@ -58,3 +58,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    function adjustScroll() {
+        const hash = window.location.hash;
+        if (hash && hash.startsWith('#')) {
+            const targetElement = document.querySelector(hash); // Seleciona o elemento alvo
+
+            if (targetElement) {
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset; // Posição original do alvo
+                const offsetPosition = targetPosition - 200; // Ajusta a posição subtraindo 100px
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth' // Rola suavemente para a posição ajustada
+                });
+            }
+        }
+    }
+
+    // Adiciona o evento de clique para todas as âncoras
+    const anchors = document.querySelectorAll('a[href^="#"]');
+    anchors.forEach(anchor => {
+        anchor.addEventListener('click', function(event) {
+            const targetId = event.currentTarget.getAttribute('href');
+            if (targetId.startsWith('#')) {
+                event.preventDefault(); // Impede o comportamento padrão de clique na âncora
+                history.pushState(null, null, targetId); // Atualiza a URL sem recarregar a página
+                adjustScroll(); // Ajusta a rolagem
+            }
+        });
+    });
+
+    // Ajusta a rolagem quando a página é carregada
+    window.addEventListener('load', adjustScroll);
+    window.addEventListener('popstate', adjustScroll); // Ajusta a rolagem quando o histórico do navegador muda
+});
+
